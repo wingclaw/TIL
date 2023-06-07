@@ -245,3 +245,41 @@ nothing to commit, working tree clean
 
 wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
 $
+
+
+----
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/wingclaw/TIL.git'
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git remote -v
+origin  https://github.com/wingclaw/TIL.git (fetch)
+origin  https://github.com/wingclaw/TIL.git (push)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/wingclaw/TIL.git'
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git remote add origin https://github.com/wingclaw/TIL.git
+error: remote origin already exists.
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git remote add origin https://github.com/wingclaw/TIL/.git
+error: remote origin already exists.
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 2.98 KiB | 1.49 MiB/s, done.
+Total 13 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/wingclaw/TIL.git
+ * [new branch]      main -> main
