@@ -1,0 +1,247 @@
+git config --global user.email "이메일"
+git config --global user.name "이름"
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2
+$ git init
+Initialized empty Git repository in C:/Users/wingclaw/Desktop/git/2/.git/
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (master)
+$ git config --global init.defaultBranch main
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (master)
+$ rm -rf .git
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2
+$ git init
+Initialized empty Git repository in C:/Users/wingclaw/Desktop/git/2/.git/
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (master)
+$ git config --global init.defaultBranch main
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (master)
+$ rm -rf .git
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2
+$ git init
+Initialized empty Git repository in C:/Users/wingclaw/Desktop/git/2/.git/
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ touch a.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ touch b.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git add a.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git add .
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.txt
+
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git commit -m '첫번째 커밋'
+[main (root-commit) 3e09b3f] 첫번째 커밋
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git config --global init.defaultBranch main
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$
+
+
+---
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL
+$ git init
+Initialized empty Git repository in C:/Users/wingclaw/Desktop/git/TIL/.git/
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ touch README.md
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add .
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git commit -m "커밋"
+[main (root-commit) 9417df0] 커밋
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add a.txt
+fatal: pathspec 'a.txt' did not match any files
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add ..\a.txt
+fatal: pathspec '..a.txt' did not match any files
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add cd\a.txt
+fatal: pathspec 'cda.txt' did not match any files
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git commit
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git commit -m 'a'
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git log
+commit 9417df0b17fd4e2d68c69a5ed22ae2ee3c02a21f (HEAD -> main)
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:26:08 2023 +0900
+
+    커밋
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add a.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git commit -m 'a'
+[main fdbf944] a
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.txt
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git log
+commit fdbf944e34356c4621c57dd89b44349a0572a484 (HEAD -> main)
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:55:21 2023 +0900
+
+    a
+
+commit 9417df0b17fd4e2d68c69a5ed22ae2ee3c02a21f
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:26:08 2023 +0900
+
+    커밋
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add TIL
+fatal: pathspec 'TIL' did not match any files
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git add .
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   python.md
+        new file:   summo
+        new file:   test 2.md
+        new file:   test.md
+
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git log
+commit fdbf944e34356c4621c57dd89b44349a0572a484 (HEAD -> main)
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:55:21 2023 +0900
+
+    a
+
+commit 9417df0b17fd4e2d68c69a5ed22ae2ee3c02a21f
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:26:08 2023 +0900
+
+    커밋
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git commit -m 'all'
+[main 8986c40] all
+ 4 files changed, 109 insertions(+)
+ create mode 100644 python.md
+ create mode 100644 summo
+ create mode 100644 test 2.md
+ create mode 100644 test.md
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/TIL (main)
+$ git log
+commit 8986c4079ce331f584412df05541446cef90493d (HEAD -> main)
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:57:06 2023 +0900
+
+    all
+
+commit fdbf944e34356c4621c57dd89b44349a0572a484
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 15:55:21 2023 +0900
+
+    a
+
+:
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git log
+commit 3e09b3f904d4b7088d9e423039bd82d4de28d6d2 (HEAD -> main)
+Author: master <imjb0411@naver.com>
+Date:   Wed Jun 7 14:29:22 2023 +0900
+
+    첫번째 커밋
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+wingclaw@DESKTOP-HGU6O5P MINGW64 ~/Desktop/git/2 (main)
+$

@@ -1,0 +1,6 @@
+
+git init : 깃 생성. , .gt 폴더 생성.
+git add . : 깃 대상 전부,앞으로도 추가
+git commit -m '메시지' :메세지 버전 남김
+git status : git 상태 확인
+git log :기록된 커밋 조회
