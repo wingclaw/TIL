@@ -1,0 +1,73 @@
+git add <file/directory>
+git commit -m 'message...'
+
+git push origin main #원격 저장소 보내는 명령
+
+2.
+untracked #한번도 커밋된적 없는 파일
+changes not staged for commit #스테이블 되지 않은 파일 있음.
+nothing to commit, working tree clean #커밋할것 없음(add 파일 없음), 작업할 것 없음(변경 파일 없음).
+
+3.
+git은 버전관리 시스템
+
+4.
+github은 git을 이용한 온라인 서비스
+
+---
+깃헙은 용량 제한 있음. /git-lfs
+
+---
+
+---
+자기소개서 프로젝트
+profile 폴더
+README.md 간단한 자기소개
+로컬저장소 설정(init)
+커밋
+--
+깃헙
+원격저장소 생성. 이름은 유저네임
+로컬에 원격저장소 설정
+push
+
+깃헙 유저이름으로 리드미 만들면 프로필 소개로 사용해줌.
+
+---
+push
+pull
+
+--
+깃헙에서 변경시 pull로 받아와서 수정.
+pull: 사실 캐치랑 머지를 같이 하는것
+---
+브랜치
+독립된 작업 흐름.
+독립해서 저장후 병합.
+겹치는 부분은 수정필요.
+
+
+임시 디코 서버
+https://discord.gg/Be6pj9Qh
+
+---
+포크
+클론(본인 저장소 클론)
+git clone http~/git-0608
+
+명령어는 (main아닌 폴더에서. 깃 설정 안된 곳)
+
+이동
+cd git-0608
+
+이름 마크다운 파일, 메시지, commit
+
+git push origin main
+
+깃허브 pull request
+
+---
+$ git remote -v
+origin  https://github.com/wingclaw/git-0608 (fetch)
+origin  https://github.com/wingclaw/git-0608 (push)
+가져오는주소, 보내는 주소

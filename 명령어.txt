@@ -41,3 +41,11 @@ git remote -v
 공백문자
 ' ' 묶거나
 공\ 백 (이스케이프문자)
+
+---
+git branch pr-en 브랜치 생성
+git checkout pr-en 이동
+git checkout -b ~ 생성, 이동
+
+
+git merge 브랜치명 : 브랜치병합
